@@ -1,72 +1,82 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    tools:context=".UpdateNoteFragment">
-    <LinearLayout
+    xmlns:tools="http://schemas.android.com/tools">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="vertical">
+        tools:context=".fragments.UpdateNoteFragment"
 
-        <androidx.cardview.widget.CardView
+        >
+
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_margin="16dp"
-            app:cardCornerRadius="5dp"
-            android:elevation="8dp"
-            android:background="@color/white">
-            <LinearLayout
+            android:orientation="vertical">
+
+            <androidx.cardview.widget.CardView
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:orientation="vertical"
-                android:padding="16dp">
-                <EditText
-                    android:id="@+id/etNoteTitleUpdate"
-                    android:layout_width="match_parent"
-                    android:layout_height="55dp"
-                    android:background="@android:color/transparent"
-                    android:ems="10"
-                    android:inputType="text"
-                    android:textColor="@color/black"
-                    android:textColorHint="@color/black"
-                    android:hint="Enter your title"
-                    android:textSize="20sp"
-                    android:textStyle="bold"
-                    />
-                <EditText
-                    android:layout_marginTop="16dp"
-                    android:id="@+id/etNoteBodyUpdate"
+                android:layout_margin="16dp"
+                android:background="@color/white"
+                android:elevation="8dp"
+                app:cardCornerRadius="5dp">
+
+                <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:background="@android:color/transparent"
-                    android:ems="10"
-                    android:gravity="start|top"
-                    android:inputType="textMultiLine"
-                    android:textColor="@color/black"
-                    android:hint="Type something..."
-                    android:textSize="20sp"
-                    android:textStyle="bold"
-                    />
-            </LinearLayout>
-        </androidx.cardview.widget.CardView>
-    </LinearLayout>
-    <com.google.android.material.floatingactionbutton.FloatingActionButton
-        android:id="@+id/fab_done"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="320dp"
-        android:layout_marginBottom="48dp"
-        android:backgroundTint="#3F51B5"
-        android:clickable="true"
-        android:contentDescription="ss"
-        android:tintMode="@color/white"
-        app:borderWidth="0dp"
-        android:src="@drawable/ic_done"
-        app:fabSize="normal"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+                    android:orientation="vertical"
+                    android:padding="16dp">
+
+                    <EditText
+                        android:id="@+id/etNoteTitleUpdate"
+                        android:layout_width="match_parent"
+                        android:layout_height="55dp"
+                        android:background="@android:color/transparent"
+                        android:ems="10"
+                        android:hint="Enter your title"
+                        android:inputType="text"
+                        android:textColor="@color/black"
+                        android:textColorHint="@color/black"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+
+                    <EditText
+                        android:id="@+id/etNoteBodyUpdate"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="16dp"
+                        android:background="@android:color/transparent"
+                        android:ems="10"
+                        android:gravity="start|top"
+                        android:hint="Type something..."
+                        android:inputType="textMultiLine"
+                        android:textColor="@color/black"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fab_done"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="320dp"
+            android:layout_marginBottom="48dp"
+            android:backgroundTint="#3F51B5"
+            android:clickable="true"
+            android:contentDescription="ss"
+            android:src="@drawable/ic_done"
+            android:tintMode="@color/white"
+            app:borderWidth="0dp"
+            app:fabSize="normal"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
 
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>
