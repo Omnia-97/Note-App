@@ -68,7 +68,7 @@
             android:layout_marginBottom="48dp"
             android:backgroundTint="#3F51B5"
             android:clickable="true"
-            android:contentDescription="ss"
+            android:contentDescription="ss "
             android:src="@drawable/ic_done"
             android:tintMode="@color/white"
             app:borderWidth="0dp"
